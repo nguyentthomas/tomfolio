@@ -14,7 +14,7 @@ export const DarkModeSwitch = () => {
   const isDark = colorMode === "dark";
   const [display, changeDisplay] = useState("none");
   return (
-    <Flex>
+    <Flex justify="right">
       <Flex top="1rem" align="center">
         {/* Desktop */}
         <Flex display={["none", "none", "flex", "flex"]}>
@@ -31,6 +31,11 @@ export const DarkModeSwitch = () => {
           <NextLink href="/blog" passHref>
             <Button variant="ghost" aria-label="blog" my={5} w="100%">
               Blog
+            </Button>
+          </NextLink>
+          <NextLink href="/contact" passHref>
+            <Button variant="ghost" aria-label="contact" my={5} w="100%">
+              Contact
             </Button>
           </NextLink>
         </Flex>

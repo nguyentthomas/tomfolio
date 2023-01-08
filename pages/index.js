@@ -1,4 +1,12 @@
-import { Box, Flex, Container, Progress, Textarea, SimpleGrid } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Container,
+  Progress,
+  Textarea,
+  SimpleGrid,
+  Heading,
+} from "@chakra-ui/react";
 import AirbnbCard from "../components/Card.jsx";
 import { DarkModeSwitch } from "../components/Header.jsx";
 
@@ -9,16 +17,14 @@ export default function Home() {
       <DarkModeSwitch />
 
       <Box align="center">
-        <h1>
-          Personal Projects
-        </h1>
-        <SimpleGrid>
-          <AirbnbCard/>
-          <AirbnbCard/>
-          <AirbnbCard/>
+        <Heading>Personal Projects</Heading>
+        <SimpleGrid minChildWidth="120px" spacing="40px" justifyItems="center">
+          <AirbnbCard />
+          <AirbnbCard />
+          <AirbnbCard />
+          <AirbnbCard />
         </SimpleGrid>
       </Box>
-
     </>
   );
 }
