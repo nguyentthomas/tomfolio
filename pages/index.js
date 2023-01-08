@@ -16,6 +16,9 @@ export default function Home() {
       <Progress value={80} size="md" colorScheme="pink" />
       <DarkModeSwitch />
 
+      {/* TODO: Add Hero - Hi I'm Tom... */}
+
+      {/* Personal Projects */}
       <Box align="center">
         <Heading>Personal Projects</Heading>
         <SimpleGrid minChildWidth="120px" spacing="40px" justifyItems="center">
@@ -25,6 +28,16 @@ export default function Home() {
           <AirbnbCard />
         </SimpleGrid>
       </Box>
+
+      {/* Skill Showcase */}
+      <Box align="center">
+        <Heading>Skill Showcase</Heading>
+        <SimpleGrid minChildWidth="120px" spacing="40px" justifyItems="center">
+          <AirbnbCard />
+        </SimpleGrid>
+      </Box>
+
+      {/* TODO: Add Contact Form */}
     </>
   );
 }
