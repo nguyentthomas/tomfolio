@@ -6,6 +6,7 @@ import {
   Textarea,
   SimpleGrid,
   Heading,
+  Text,
 } from "@chakra-ui/react";
 import AirbnbCard from "../components/Card.jsx";
 import { DarkModeSwitch } from "../components/Header.jsx";
@@ -17,6 +18,11 @@ export default function Home() {
       <DarkModeSwitch />
 
       {/* TODO: Add Hero - Hi I'm Tom... */}
+      <Container>
+        <Text>
+          <Heading>Hi, I'm Tom!</Heading>
+        </Text>
+      </Container>
 
       {/* Personal Projects */}
       <Box align="center">
